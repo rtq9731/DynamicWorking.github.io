@@ -1,0 +1,162 @@
+
+@font-face {
+    font-family: normalSC;
+    src: url('./Fonts/SCDream5.otf');
+  }
+
+  @font-face {
+    font-family: boldSC;
+    src: url('./Fonts/SCDream7.otf');
+  }
+
+* {
+	margin:0;
+	padding:0;
+	color:#000;
+	font-family: normalSC;
+	box-sizing: border-box;
+}
+
+.fn-font {
+	font-family: normalSC;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+}
+
+.container {
+    width: 90vw;
+    margin:0 auto;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header > h2 {
+	margin-left:20px;
+}
+
+header > nav {
+	width:600px;
+	height:100%;
+}
+
+header ul {
+	width:100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+header ul > li {
+	font-size:20px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+#visual {
+	background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('./Images/visual.png');
+    background-size: cover;
+	background-position: 0% 20%;
+	width:100%;
+	height:600px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#visual * {
+    color: white;
+}
+
+#visual h2 {
+    font-size: 64px;
+}
+
+#visual p {
+    margin: 30px 0;
+}
+
+.btn {
+    width : 128px;
+    padding : 8px 12px;
+    border : 3px solid green;
+    background-color: #1e1e1e;
+    border-radius: 4px;
+}
+
+.btn:hover  {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+    cursor:pointer;
+}
+
+#titleText {
+    font-size: 50px;
+    font-family: boldSC;
+}
+
+#board {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+	justify-content: space-around;
+	margin-top: 40px;
+}
+
+#board > .item {
+    padding : 5%;
+}
+
+.img {
+	width: 100%;
+	height: 250px;
+}
+
+.img > img {
+	width: 100%;
+	height:100%;
+	object-fit: cover;
+	border-radius: 10px 10px 0 0;
+}
+
+.item .boardInfo {
+    background: #fff;
+	padding: 20px;
+	border-radius: 0 0 10px 10px;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+} 
+
+.button-row {
+    width : 100%;
+    text-align: right;
+}
+
+.btn-sm {
+    padding: 8px 12px;
+    font-size: 12px;
+    color:white;
+    width:auto;
+    border:2px solid #ddd;
+}
+
+.info > h4 {
+    font-size: 30px;
+    color:rgba(0,0,0,0);
+}
+
+.info > p {
+    color:#555;
+}
